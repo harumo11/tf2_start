@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package>
+
+	<!-- Package name which is same name as project in CMakeLists.txt -->
+	<name>tf_start</name>
+	<!-- Version of package -->
+	<version>0.0.1</version>
+	<!-- Explanation of this package-->
+	<description>tf2 tutorial package</description>
+	<!-- license of this package -->
+	<license>BSD</license>
+	<!-- Mail address of maintainer-->
+	<maintainer email = "s_harumo@hotmail.co.jp">Anonymous</maintainer>
+
+	<!-- Build system : catkin -->
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<!-- Dependency when build -->
+	<build_depend>roscpp</build_depend>
+	<build_depend>tf2</build_depend>
+	<build_depend>tf2-ros</build_depend>
+
+
+	<!-- Dependency when runtime -->
+	<run_depend>roscpp</run_depend>
+	<build_depend>tf2</build_depend>
+	<build_depend>tf2-ros</build_depend>
+
+	<export>
+	</export>
+
+</package>
+
