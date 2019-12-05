@@ -38,3 +38,28 @@ topic : TransformStamped
 ### launch
 
 launchファイルでtfにポーズを流すプログラムを起動しているが，シミュレータに現れる亀は１匹なので{turtle1}-->{turtle2}の変換はできない．
+
+## Add frame
+フレームを追加する．
+やってることはbroadcastと全く同じ気がする
+
+## Tips
+
+RPY --> Quaternion
+```
+#include <tf2/LinearMath/Quaternion.h>
+
+tf2::Quaternion q;
+q.setRPY(rool, pitch, yaw);
+```
+
+Quaternion --> RPY
+```
+#include <tf2/LinearMath/Matrix3x3.h>
+
+tf2::Quaternion q;
+...
+
+tf2::Matrix3x3 m(q);
+m.getRPY(roll, pitch, yaw);
+```
