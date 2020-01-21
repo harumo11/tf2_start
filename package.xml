@@ -2,7 +2,7 @@
 <package>
 
 	<!-- Package name which is same name as project in CMakeLists.txt -->
-	<name>tf_start</name>
+	<name>tf2_start</name>
 	<!-- Version of package -->
 	<version>0.0.1</version>
 	<!-- Explanation of this package-->
